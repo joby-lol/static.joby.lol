@@ -3,5 +3,3 @@ services:
     build: .
     ports:
       - "9846:80"
-    volumes:
-      - ../:/usr/share/nginx/

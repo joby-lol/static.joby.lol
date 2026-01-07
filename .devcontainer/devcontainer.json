@@ -2,5 +2,9 @@
 	"name": "Dev Container",
 	"dockerComposeFile": "docker-compose.yaml",
 	"workspaceFolder": "/usr/share/nginx/",
-	"service": "site"
+	"service": "site",
+	"mounts": [
+		"source=${localWorkspaceFolder}/nginx.conf,target=/etc/nginx/conf.d/default.conf,type=bind",
+		"source=${localWorkspaceFolder},target=/usr/share/nginx,type=bind"
+	]
 }
