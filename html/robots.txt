@@ -1,0 +1,5 @@
+
+# Welcome to joby.lol
+User-agent: *
+Allow: /
+Crawl-delay: 10

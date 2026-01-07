@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joby's Static Files</title>
+    <meta name="description" content="This is the static file hosting for joby.lol. Check out the main site for more!">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#4a90e2">
+    <meta name="theme-color" content="#ffffff">
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #1a1a1a;
+            --accent: #4a90e2;
+            --link: #2970c7;
+            --link-hover: #1d4e8f;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #1a1a1a;
+                --text: #f0f0f0;
+                --accent: #64a6ed;
+                --link: #7eb3f0;
+                --link-hover: #9cc4f4;
+            }
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        main {
+            max-width: 600px;
+            padding: 2rem;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            opacity: 0.9;
+        }
+        .emoji {
+            font-size: 3rem;
+            margin: 1rem 0;
+        }
+        .social-links {
+            margin-top: 2rem;
+            padding: 1rem;
+            border-top: 1px solid rgba(128, 128, 128, 0.2);
+        }
+        .social-links a {
+            color: var(--link);
+            text-decoration: none;
+            margin: 0 1rem;
+            transition: color 0.2s ease;
+        }
+        .social-links a:hover {
+            color: var(--link-hover);
+            text-decoration: underline;
+        }
+    </style>
+    <script defer src="https://umami.joby.lol/script.js" data-website-id="a50b037b-cbcb-4ac0-8b5c-e788e8f67d57"></script>
+</head>
+<body>
+    <main>
+        <div class="emoji">📁</div>
+        <h1>Welcome to my static files</h1>
+        <p>This is where I host static files for other sites.</p>
+        <p>For more actual content, please visit my main site at <a href="https://joby.lol">joby.lol</a>.</p>
+        <div class="social-links">
+            <a href="https://go.joby.lol/git" target="_blank">📦 Git</a>
+            <a href="https://go.joby.lol/mastodon" target="_blank">🦣 Mastodon</a>
+        </div>
+    </main>
+</body>
+</html>

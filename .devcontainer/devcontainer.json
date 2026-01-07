@@ -1,0 +1,6 @@
+{
+	"name": "Dev Container",
+	"dockerComposeFile": "docker-compose.yaml",
+	"workspaceFolder": "/usr/share/nginx/",
+	"service": "site"
+}
