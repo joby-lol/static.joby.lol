@@ -1,5 +1,6 @@
 services:
   site:
+    restart: unless-stopped
     build: .
     ports:
       - "9846:80"
